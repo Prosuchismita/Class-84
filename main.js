@@ -39,6 +39,74 @@ function my_keydown(e)
 	}
 }
 
+function my_keydown(e)
+{
+	keyPressed = e.keyCode;
+	console.log(keyPressed);
+	
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
+		{
+			arrowkey();
+			document.getElementById("di").innerHTML="You pressed Arrow key";
+			console.log("arrow key");
+		}
+	else{
+		otherkey();
+		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+	}
+}
+
+function my_keydown(e)
+{
+	keyPressed = e.keyCode;
+	console.log(keyPressed);
+	
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
+		{
+			numberkey();
+			document.getElementById("di").innerHTML="You pressed Number key";
+			console.log("alphabet key");
+		}
+	else{
+		otherkey();
+		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+	}
+}
+
+function my_keydown(e)
+{
+	keyPressed = e.keyCode;
+	console.log(keyPressed);
+	
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
+		{
+			otherkey();
+			document.getElementById("di").innerHTML="You pressed Other key";
+			console.log("other key");
+		}
+	else{
+		otherkey();
+		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+	}
+}
+
+function my_keydown(e)
+{
+	keyPressed = e.keyCode;
+	console.log(keyPressed);
+	
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
+		{
+			specialkey();
+			document.getElementById("di").innerHTML="You pressed Special key";
+			console.log("special key");
+		}
+	else{
+		otherkey();
+		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+	}
+}
+
 function aplhabetkey()
 {
 	img_image="Alpkey.png";
@@ -47,14 +115,18 @@ function aplhabetkey()
 }
 function numberkey()
 {
-	
+	img_image="numkey.png";
+  add();
 }
 function arrowkey()
 {
+	img_image="Arrkey.png";
+  add();
 }
 function specialkey()
 {
-	
+	img_image="spkey.png";
+  add();
 }
 function otherkey()
 {
